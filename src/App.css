@@ -1,0 +1,23 @@
+svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+ion-tab-bar {
+    height: 10vh;
+    /* padding-bottom: 2rem;; */
+}
+
+.ion-label--faqs {
+    text-transform: uppercase;
+}
+
+ion-tab-button.tab-selected {
+    --color-selected: #fff;
+}
+
+ion-label {
+    font-size: 0.6rem;
+    margin-top: 7px;
+}
+  

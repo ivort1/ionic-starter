@@ -1,0 +1,42 @@
+{
+    "information": {
+        "name": "GCfadezz",
+        "location": "Fontana, CA",
+        "phone": "(909) 123-4567"
+    },
+    "social_media": {
+        "instagram_name": "@gcfadezz",
+        "instagram_url": "https://www.instagram.com/gcfadezz"
+    },
+    "services": [
+        {
+            "service": "Haircut",
+            "details": "Detailed haircut (lineup included) with a straight razor shave.",
+            "price": "25.00"
+        },
+        {
+            "service": "Beard Trim",
+            "details": "Beard trim and lineup with a straight razor shave.",
+            "price": "15.00"
+        },
+        {
+            "service": "Shave",
+            "details": "Straight razor shave with hot towel.",
+            "price": "20.00"
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Do you accept walk-ins?",
+            "answer": "Yes, we accept walk-ins but appointments are preferred."
+        },
+        {
+            "question": "What forms of payment do you accept?",
+            "answer": "We accept cash and all major credit cards—including Apple Pay and Android Pay—for online appointments. For walk-ins, only cash is accepted."
+        },
+        {
+            "question": "Do you work with kids?",
+            "answer": "Yes, we can accommodate children of all ages."
+        }
+    ]
+}

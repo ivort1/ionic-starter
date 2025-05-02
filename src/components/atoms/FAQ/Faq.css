@@ -1,0 +1,45 @@
+details {
+    color: #fff;
+    width: 100%;
+  }
+  
+details > summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    transition: color ease-in 0.15s;
+    
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* details[open] > summary {
+  } */
+  
+  details > p {
+    color: var(--ion-text-color-step-400, #666666);
+    padding: 0;
+  }
+
+  .card-content-ios p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .faq svg {
+    background-color: #0d0d0d;
+    border-radius: 999px;
+    height: 2.25rem;
+    width: 2.25rem;
+    padding: 5px;
+    transition: transform ease-in-out 0.15s;
+  }
+  
+  details[open] > summary > svg {
+    /* color: #ffa500; */
+    transform: rotate(45deg);
+  }  
