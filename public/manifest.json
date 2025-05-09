@@ -1,6 +1,12 @@
 {
-  "short_name": "Ionic App",
-  "name": "My Ionic App",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "short_name": "ET Fadezz",
+  "name": "ET Fadezz",
+  "scope": "/",
+  "start_url": "/",
+  "description": "Licensed barber based in Fontana, CA.",
   "icons": [
     {
       "src": "assets/icon/favicon.png",
@@ -13,9 +19,5 @@
       "sizes": "512x512",
       "purpose": "maskable"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  ]
 }
