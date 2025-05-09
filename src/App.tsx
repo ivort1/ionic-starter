@@ -85,31 +85,31 @@ export default function App() {
               <IonTabButton tab="home" href="/home">
                 <HomeFill />
                 <HomeOutline />      
-              <IonLabel>Home</IonLabel>
+              {/* <IonLabel>Home</IonLabel> */}
             </IonTabButton>
             <IonTabButton tab="services" href="/services">
               <HairClipperFill />
               <HairClipperOutline />
-              <IonLabel>Services</IonLabel>
+              {/* <IonLabel>Services</IonLabel> */}
             </IonTabButton>
 
             <IonTabButton tab="photos" href="/photos">
               <CameraFill />
               <CameraOutline />
-              <IonLabel>Photos</IonLabel>
+              {/* <IonLabel>Photos</IonLabel> */}
             </IonTabButton>
 
             <IonTabButton tab="reviews" href="/reviews">
               <StarRatingFill />
               <StarRatingOutline />
-              <IonLabel>Reviews</IonLabel>
+              {/* <IonLabel>Reviews</IonLabel> */}
             </IonTabButton>
 
             {/* FAQ */}
             <IonTabButton tab="faqs" href="/faqs">
               <FaqFill />
               <FaqOutline />
-              <IonLabel className="ion-label--faqs">Faq</IonLabel>
+              {/* <IonLabel className="ion-label--faqs">Faq</IonLabel> */}
             </IonTabButton>
           </IonTabBar>
         </IonTabs>

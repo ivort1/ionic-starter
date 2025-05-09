@@ -1,11 +1,11 @@
 .button-85 {
     background: #111;
-    border: none;
+    border: solid 1px #FFF;
     border-radius: 25px;
     bottom: 7rem;
     color: #FFF;
     cursor: pointer;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     outline: none;
     padding: 0.5rem 1rem;
     position: fixed;
@@ -28,7 +28,7 @@
     }
   }
   
-  .button-85:before {
+  /* .button-85:before {
     content: "";
     background: linear-gradient(
       45deg,
@@ -78,4 +78,4 @@
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
+  } */
