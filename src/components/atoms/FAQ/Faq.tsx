@@ -1,4 +1,4 @@
-import { PlusSign, RightArrow } from "../../../../assets/icons";
+import { PlusSign } from "../../../../assets/icons";
 import "./Faq.css";
 
 interface FaqProps {

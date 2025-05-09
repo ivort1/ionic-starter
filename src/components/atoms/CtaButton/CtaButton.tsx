@@ -4,7 +4,7 @@ import Modal from '../../molecules/Modal';
 import "./CtaButton.css";
 
 interface CtaButtonProps {
-  icon: JSX.Element;
+  icon: React.ReactNode;
 }
 
 export default function CtaButton({ icon }: CtaButtonProps) {

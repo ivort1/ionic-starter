@@ -4,6 +4,50 @@
         "location": "Fontana, CA",
         "phone": "(909) 123-4567"
     },
+    "business_hours": [
+        {
+            "day": "Sunday",
+            "open": "9:00am",
+            "close": "9:00pm",
+            "closed": true
+        },
+        {
+            "day": "Monday",
+            "open": "9:00am",
+            "close": "9:00pm",
+            "closed": true
+        },
+        {
+            "day": "Tuesday",
+            "open": "9:00am",
+            "close": "9:00pm",
+            "closed": false
+        },
+        {
+            "day": "Wednesday",
+            "open": "9:00am",
+            "close": "9:00pm",
+            "closed": false
+        },
+        {
+            "day": "Thursday",
+            "open": "9:00am",
+            "close": "9:00pm",
+            "closed": false
+        },
+        {
+            "day": "Friday",
+            "open": "9:00am",
+            "close": "9:00pm",
+            "closed": false
+        },
+        {
+            "day": "Saturday",
+            "open": "8:00am",
+            "close": "5:00pm",
+            "closed": false
+        }
+    ],
     "social_media": {
         "instagram_name": "@gcfadezz",
         "instagram_url": "https://www.instagram.com/gcfadezz"
@@ -35,8 +79,12 @@
             "answer": "We accept cash and all major credit cards—including Apple Pay and Android Pay—for online appointments. For walk-ins, only cash is accepted."
         },
         {
-            "question": "Do you work with kids?",
+            "question": "Do you cut kids' hair?",
             "answer": "Yes, we can accommodate children of all ages."
+        },
+        {
+            "question": "Where are you located?",
+            "answer": "Our studio is located in Fontana, CA near the 10 freeway off of the Sierra Ave exit. Since we operate by appointment-only, the exact address will be sent via text and email once you've confirmed your appointment."
         }
     ]
 }

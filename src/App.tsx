@@ -49,9 +49,9 @@ import './theme/variables.css';
 
 import "./App.css";
 
-import { Calendar } from '../assets/icons';
+import { Calendar, CameraFill, FaqFill, HairClipperFill, HairClipperOutline, StarRatingFill, StarRatingOutline, ThumbsUpFill } from '../assets/icons';
 
-import { HomeFill, BarberPole, PhotoFill, FeedbackFill, QuestionMark } from "../assets/icons";
+import { HomeOutline, HomeFill, CameraOutline, ThumbsUpOutline, FaqOutline } from "../assets/icons";
 import CtaButton from './components/atoms/CtaButton/CtaButton';
 
 setupIonicReact();
@@ -82,28 +82,34 @@ export default function App() {
             </Route>
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
-            <IonTabButton tab="home" href="/home">
-              <HomeFill />
+              <IonTabButton tab="home" href="/home">
+                <HomeFill />
+                <HomeOutline />      
               <IonLabel>Home</IonLabel>
             </IonTabButton>
             <IonTabButton tab="services" href="/services">
-              <BarberPole />
+              <HairClipperFill />
+              <HairClipperOutline />
               <IonLabel>Services</IonLabel>
             </IonTabButton>
+
             <IonTabButton tab="photos" href="/photos">
-              <PhotoFill />
+              <CameraFill />
+              <CameraOutline />
               <IonLabel>Photos</IonLabel>
             </IonTabButton>
 
             <IonTabButton tab="reviews" href="/reviews">
-              <FeedbackFill />
+              <StarRatingFill />
+              <StarRatingOutline />
               <IonLabel>Reviews</IonLabel>
             </IonTabButton>
 
             {/* FAQ */}
             <IonTabButton tab="faqs" href="/faqs">
-              <QuestionMark />
-              <IonLabel className="ion-label--faqs">Faqs</IonLabel>
+              <FaqFill />
+              <FaqOutline />
+              <IonLabel className="ion-label--faqs">Faq</IonLabel>
             </IonTabButton>
           </IonTabBar>
         </IonTabs>

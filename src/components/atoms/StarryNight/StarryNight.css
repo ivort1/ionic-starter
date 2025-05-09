@@ -1,0 +1,101 @@
+:root {
+    --twinkle-duration: 4s;
+  }
+  
+  .stars-wrapper {
+    position: relative;
+    pointer-events: none;
+    width: 100vw;
+    height: 50vh;
+    /* background: linear-gradient(
+        to bottom,
+        #16161d 0%,
+        #1f1f3a 30%,
+        #3b2f4a 60%,
+        #111 100%
+      ); */
+    background: linear-gradient(
+        to bottom,
+        #111111 0%,
+        #171717 30%,
+        #272727 60%,
+        #000000 90%
+    );
+    overflow: hidden;
+  }
+  
+  /* SVG layers for stars */
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: twinkle var(--twinkle-duration) ease-in-out infinite;
+  }
+  
+  /* Delay animations for 2nd and 3rd layers */
+  .stars-wrapper > .stars:nth-of-type(2) {
+    animation-delay: calc(var(--twinkle-duration) * -0.33);
+  }
+  .stars-wrapper > .stars:nth-of-type(3) {
+    animation-delay: calc(var(--twinkle-duration) * -0.66);
+  }
+  
+  @keyframes twinkle {
+    25% {
+      opacity: 0;
+    }
+  }
+  
+  /* Star styling */
+  .star {
+    fill: white;
+  }
+  
+  .star:nth-child(3n) {
+    opacity: 0.8;
+  }
+  
+  .star:nth-child(7n) {
+    opacity: 0.6;
+  }
+  
+  .star:nth-child(13n) {
+    opacity: 0.4;
+  }
+  
+  .star:nth-child(19n) {
+    opacity: 0.2;
+  }
+  
+  /* Comet animations */
+  .comet {
+    transform-origin: center;
+    animation: comet 10s linear infinite;
+  }
+  
+  @keyframes comet {
+    0%,
+    40% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    60%,
+    100% {
+      transform: translateX(-100vmax);
+      opacity: 0;
+    }
+  }
+  
+  .comet-b {
+    animation-delay: -3.3s;
+  }
+  
+  .comet-c {
+    animation-delay: -5s;
+  }
+  

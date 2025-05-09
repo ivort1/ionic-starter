@@ -1,0 +1,21 @@
+.hours {
+    display: flex;
+    align-items: center;
+}
+
+.day {
+    white-space: nowrap;
+    padding-right: 8px;
+}
+
+.dot-leader {
+    flex-grow: 1;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 8px;
+    height: 1px;
+}
+
+.times {
+    white-space: nowrap;
+    padding-left: 8px;
+}

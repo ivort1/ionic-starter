@@ -21,12 +21,35 @@ details > summary {
   } */
   
   details > p {
-    color: var(--ion-text-color-step-400, #666666);
-    padding: 0;
+    color: var(--ion-text-color-step-300, #bbbbbb);
+    opacity: 0;
+    padding-top: 0;
   }
+  
+  details[open] > p {
+    animation: expandPadding 0.15s ease-in-out forwards,
+                makeVisible 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes expandPadding {
+    from {
+      padding-top: 0;
+    }
+    to {
+      padding-top: 1rem;
+    }
+  }
+  
+  @keyframes makeVisible {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }  
 
   .card-content-ios p {
-    margin-top: 1rem;
     font-size: 1rem;
   }
   

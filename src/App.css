@@ -1,4 +1,4 @@
-svg {
+ion-tab-button svg {
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -12,7 +12,19 @@ ion-tab-bar {
     text-transform: uppercase;
 }
 
-ion-tab-button.tab-selected {
+.tab-selected .unselected {
+    display: none;
+}
+
+.tab-selected .selected {
+    display: initial !important;
+}
+
+.selected {
+    display: none;
+}
+
+.tab-selected {
     --color-selected: #fff;
 }
 
@@ -20,4 +32,3 @@ ion-label {
     font-size: 0.6rem;
     margin-top: 7px;
 }
-  

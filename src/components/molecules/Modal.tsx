@@ -10,7 +10,7 @@ import {
 } from '@ionic/react';
 
 export default function Modal() {
-  const modal = useRef<HTMLIonModalElement>(null);
+  const modal = useRef<any>(null);
   const page = useRef(null);
 
   const [presentingElement, setPresentingElement] = useState<HTMLElement | null>(null);

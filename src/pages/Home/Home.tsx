@@ -13,21 +13,33 @@ import {
 
 import './Home.css';
 
+// JSON data
+import json from "../../database/database.json";
+import { Database } from "../../database/database";
+
+import Hours from '../../components/atoms/BusinessHours/Hours/Hours';
+import StarryNight from '../../components/atoms/StarryNight/StarryNight';
+
 export default function Home() {
+  const data: Database = json;
+  const { business_hours } = data;
+
   return (
     <IonPage>
-      <IonHeader>
+      {/* <IonHeader>
         <IonToolbar>
           <IonTitle>Home</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> */}
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader> */}
 
+        <StarryNight />
+        
         <IonCard>
           <IonCardHeader>
             <IonCardTitle>GCfadezz</IonCardTitle>
@@ -38,6 +50,20 @@ export default function Home() {
             Licensed barber serving Los Angeles and San Bernardino counties,
             committed to exceptional professionalism, quality, and personalized
             care for every client.
+          </IonCardContent>
+      </IonCard>
+
+      <IonCard>
+          <IonCardHeader>
+            <IonCardTitle>Business hours</IonCardTitle>
+          </IonCardHeader>
+
+          <IonCardContent>
+            {
+              business_hours.map(({ day, open, close, closed}, index) => (
+                <Hours day={day} open={open} close={close} closed={closed} key={index}/>
+              ))
+            }
           </IonCardContent>
       </IonCard>
       </IonContent>
