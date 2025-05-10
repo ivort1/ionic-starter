@@ -25,13 +25,13 @@ export default function Home() {
   const { business_hours } = data;
 
   return (
-    <IonPage>
+    <IonPage className="no-scrollbar">
       {/* <IonHeader>
         <IonToolbar>
           <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader> */}
-      <IonContent fullscreen className="no-scrollbar">
+      <IonContent fullscreen>
         {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Home</IonTitle>

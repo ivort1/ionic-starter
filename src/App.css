@@ -32,3 +32,7 @@ ion-label {
     font-size: 0.6rem;
     margin-top: 7px;
 }
+
+ion-title {
+    background-color: #000000;
+}
