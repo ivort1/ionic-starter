@@ -31,7 +31,7 @@ export default function Home() {
           <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader> */}
-      <IonContent fullscreen>
+      <IonContent fullscreen className="no-scrollbar">
         {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Home</IonTitle>

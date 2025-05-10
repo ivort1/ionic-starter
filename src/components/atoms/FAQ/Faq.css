@@ -52,7 +52,7 @@ details > summary {
   .card-content-ios p {
     font-size: 1rem;
   }
-  
+/*   
   .faq svg {
     box-sizing: border-box;
     background-color: #0d0d0d;
@@ -62,9 +62,30 @@ details > summary {
     padding: 5px;
     transition: transform ease-in-out 0.15s;
     display: block;
-  }  
+    overflow: hidden;
+  }   */
+
+  /* Wrapper that enforces a perfect circle */
+.plus-icon-wrapper {
+  background-color: #0d0d0d;
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure child content doesn’t spill over */
+}
+
+/* Make the SVG fill the container appropriately */
+.plus-icon-wrapper svg {
+  display: block;
+  height: 80%;  /* Adjust based on your desired icon size */
+  transition: transform ease-in-out 0.15s;
+  width: 80%;
+}
   
-  details[open] > summary > svg {
+  details[open] > summary > .plus-icon-wrapper > svg {
     /* color: #ffa500; */
     transform: rotate(45deg);
   }  

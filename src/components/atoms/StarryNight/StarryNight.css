@@ -3,31 +3,23 @@
   }
   
   .stars-wrapper {
-    border-radius: 35px 35px 0 0;
-    position: fixed;
+    position: absolute; /* Removed from normal flow, but relative to the nearest positioned ancestor or the document body */
     top: 0;
     left: 0;
-    pointer-events: none;
     width: 100vw;
     height: 50vh;
-    /* background: linear-gradient(
-        to bottom,
-        #16161d 0%,
-        #1f1f3a 30%,
-        #3b2f4a 60%,
-        #111 100%
-      ); */
+    border-radius: 50px 50px 0 0;
     background: linear-gradient(
-        to bottom,
-        #111111 0%,
-        #171717 30%,
-        #272727 60%,
-        #000000 90%
+      to bottom,
+      #111111 0%,
+      #171717 30%,
+      #272727 60%,
+      #000000 90%
     );
     overflow: hidden;
-    pointer-events: none;
-    z-index: -1;
-  }
+    pointer-events: none; /* Allows clicks to pass through */
+    z-index: -1; /* Ensures it stays behind other elements */
+  }  
   
   /* SVG layers for stars */
   .stars {
