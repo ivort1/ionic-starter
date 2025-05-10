@@ -14,12 +14,10 @@
 }
 
 .home--card-title-service-hours {
-    font-family: "Jost", sans-serif;
-    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: small;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: medium;
 }
 
 .home--card-content-service-hours {
