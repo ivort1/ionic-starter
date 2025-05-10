@@ -55,10 +55,10 @@ export default function Home() {
 
       <IonCard>
           <IonCardHeader>
-            <IonCardTitle>Business hours</IonCardTitle>
+            <IonCardTitle className="home--card-title-service-hours">Service Hours</IonCardTitle>
           </IonCardHeader>
 
-          <IonCardContent>
+          <IonCardContent className="home--card-content-service-hours">
             {
               business_hours.map(({ day, open, close, closed}, index) => (
                 <Hours day={day} open={open} close={close} closed={closed} key={index}/>

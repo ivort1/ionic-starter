@@ -11,4 +11,20 @@
 .no-scrollbar {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
-}  
+}
+
+.home--card-title-service-hours {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.home--card-content-service-hours {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+}

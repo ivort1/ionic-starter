@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { IonList, IonItem, IonLabel } from '@ionic/react';
 
 // Custom components
 import Service from "../../components/atoms/Service/Service";
@@ -28,15 +28,18 @@ export default function Services() {
           </IonToolbar>
         </IonHeader>
 
-        <IonCard>
-          <IonCardContent className="ion-card-content">
-            {
-              services.map(({ service, details, price }, index) => (
-                <Service key={index} service={service} details={details} price={price} />
-              ))
-            }
-          </IonCardContent>
-        </IonCard>
+
+        <IonList inset={true}>
+          {
+            services.map(({ service, details, price }, index) => (
+              <IonItem>
+                <IonLabel>
+                  <Service key={index} service={service} details={details} price={price} />
+                </IonLabel>
+              </IonItem>
+            ))
+          }
+        </IonList>
       </IonContent>
     </IonPage>
   );
