@@ -3,7 +3,10 @@
   }
   
   .stars-wrapper {
-    position: relative;
+    border-radius: 35px 35px 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     pointer-events: none;
     width: 100vw;
     height: 50vh;
@@ -22,6 +25,8 @@
         #000000 90%
     );
     overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
   }
   
   /* SVG layers for stars */

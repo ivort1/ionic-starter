@@ -40,9 +40,9 @@ export default function Home() {
 
         <StarryNight />
         
-        <IonCard>
+        <IonCard className="about">
           <IonCardHeader>
-            <IonCardTitle>GCfadezz</IonCardTitle>
+            <IonCardTitle>ET Fadezz</IonCardTitle>
             <IonCardSubtitle>Professional barber</IonCardSubtitle>
           </IonCardHeader>
 
