@@ -44,41 +44,20 @@ details[open] > p {
     opacity: 1;
   }
 }  
-/*   
+  
 .faq svg {
-box-sizing: border-box;
-background-color: #0d0d0d;
-border-radius: 50%;
-height: 1.75rem;
-width: 1.75rem;
-padding: 5px;
-transition: transform ease-in-out 0.15s;
-display: block;
-overflow: hidden;
-}   */
-
-/* Wrapper that enforces a perfect circle */
-.plus-icon-wrapper {
-  background-color: #0d0d0d;
+  box-sizing: border-box;
+  background-color: #000000;
   border-radius: 50%;
+  color: #FFF;
   height: 1.75rem;
   width: 1.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Ensure child content doesn’t spill over */
-}
-
-/* Make the SVG fill the container appropriately */
-.plus-icon-wrapper svg {
-  color: #FFF;
-  display: block;
-  height: 80%;  /* Adjust based on your desired icon size */
+  padding: 5px;
   transition: transform ease-in-out 0.15s;
-  width: 80%;
-}
+  display: block;
+  overflow: hidden;
+}  
 
-details[open] > summary > .plus-icon-wrapper > svg {
-  /* color: #ffa500; */
+details[open] > summary > svg {
   transform: rotate(45deg);
 }  
