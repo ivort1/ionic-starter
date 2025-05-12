@@ -12,7 +12,9 @@ export default function Faq({ name, question, answer }: FaqProps) {
     <details name={name} className="faq">
       <summary>
         <h2>{question}</h2>
-        <PlusSign />
+        <span className="summary--svg">
+          <PlusSign />
+        </span> 
       </summary>
       <p>{answer}</p>
     </details>

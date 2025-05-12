@@ -1,63 +1,55 @@
-details {
+.faq {
   width: 100%;
+  box-sizing: border-box;
 }
 
-details > summary {
+.faq summary {
   cursor: pointer;
+  list-style: none;
   padding: 0;
-  transition: color ease-in 0.15s;
-
+  transition: color 0.15s ease-in;
+  
   /* Flexbox */
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 
-/* details[open] > summary {
-} */
+.faq summary::-webkit-details-marker {
+  display: none;
+}
 
-details > p {
+.faq > p {
   opacity: 0;
   padding-top: 0;
+  transition: opacity 0.3s ease-in-out, padding-top 0.15s ease-in-out;
 }
 
-details[open] > p {
-  animation: expandPadding 0.15s ease-in-out forwards, makeVisible 0.3s ease-in-out forwards;
+.faq[open] > p {
+  opacity: 1;
+  padding-top: 1rem;
 }
 
-@keyframes expandPadding {
-  from {
-    padding-top: 0;
-  }
-  to {
-    padding-top: 1rem;
-  }
-}
-
-@keyframes makeVisible {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}  
-  
-.faq svg {
-  box-sizing: border-box;
-  background-color: #000000;
+.summary--svg {
+  background-color: #000;
   border-radius: 50%;
+  box-sizing: border-box;
+  height: 2.25rem;
+  width: 2.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq summary .summary--svg svg {
   color: #FFF;
   height: 1.75rem;
   width: 1.75rem;
-  padding: 5px;
-  transition: transform ease-in-out 0.15s;
-  display: block;
-  overflow: hidden;
-}  
+  transition: transform 0.15s ease-in-out;
+}
 
-details[open] > summary > svg {
+.faq[open] summary .summary--svg svg {
   transform: rotate(45deg);
-}  
+}
