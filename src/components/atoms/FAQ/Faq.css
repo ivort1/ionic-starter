@@ -33,10 +33,10 @@
 
 .summary--svg {
   background-color: #000;
-  border-radius: 999px !important;
+  border-radius: 50% !important;
   /* box-sizing: border-box; */
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 
   display: flex;
   align-items: center;
@@ -45,8 +45,8 @@
 
 .faq summary .summary--svg svg {
   color: #FFF;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1rem;
+  width: 1rem;
   transition: transform 0.15s ease-in-out;
 }
 

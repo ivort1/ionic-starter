@@ -81,6 +81,10 @@
         {
             "question": "Where are you located?",
             "answer": "Our studio is located in Fontana, CA near the 10 freeway off of the Sierra Ave exit. Since we operate by appointment-only, the exact address will be sent via text and email once you've confirmed your appointment."
+        },
+        {
+            "question": "Why are you gae?",
+            "answer": "Who says I'm gae?"
         }
     ]
 }
