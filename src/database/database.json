@@ -7,44 +7,44 @@
     "business_hours": [
         {
             "day": "Sunday",
-            "open": "9:00am",
-            "close": "9:00pm",
+            "open": "9am",
+            "close": "9pm",
             "closed": true
         },
         {
             "day": "Monday",
-            "open": "9:00am",
-            "close": "9:00pm",
+            "open": "9am",
+            "close": "9pm",
             "closed": true
         },
         {
             "day": "Tuesday",
-            "open": "9:00am",
-            "close": "9:00pm",
+            "open": "9am",
+            "close": "9pm",
             "closed": false
         },
         {
             "day": "Wednesday",
-            "open": "9:00am",
-            "close": "9:00pm",
+            "open": "9am",
+            "close": "9pm",
             "closed": false
         },
         {
             "day": "Thursday",
-            "open": "9:00am",
-            "close": "9:00pm",
+            "open": "9am",
+            "close": "9pm",
             "closed": false
         },
         {
             "day": "Friday",
-            "open": "9:00am",
-            "close": "9:00pm",
+            "open": "9am",
+            "close": "9pm",
             "closed": false
         },
         {
             "day": "Saturday",
-            "open": "8:00am",
-            "close": "5:00pm",
+            "open": "8am",
+            "close": "5pm",
             "closed": false
         }
     ],
