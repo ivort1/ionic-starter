@@ -1,7 +1,9 @@
-.ion-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 2rem;
+/* Apply margin-top to all ion-labels except the first one */
+ion-list > ion-item:not(:first-child) > ion-label {
+    margin-top: 24px;
+}
+
+/* Apply margin-bottom to all ion-labels except the last one */
+ion-list > ion-item:not(:last-child) > ion-label {
+    margin-bottom: 24px;
 }

@@ -1,71 +1,63 @@
 details {
-    color: #fff;
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+
 details > summary {
-    cursor: pointer;
-    font-weight: 600;
-    padding: 0;
-    transition: color ease-in 0.15s;
-    
-    /* Flexbox */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  /* details[open] > summary {
-  } */
-  
-  details > p {
-    color: var(--ion-text-color-step-300, #bbbbbb);
-    opacity: 0;
+  cursor: pointer;
+  padding: 0;
+  transition: color ease-in 0.15s;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* details[open] > summary {
+} */
+
+details > p {
+  opacity: 0;
+  padding-top: 0;
+}
+
+details[open] > p {
+  animation: expandPadding 0.15s ease-in-out forwards, makeVisible 0.3s ease-in-out forwards;
+}
+
+@keyframes expandPadding {
+  from {
     padding-top: 0;
   }
-  
-  details[open] > p {
-    animation: expandPadding 0.15s ease-in-out forwards,
-                makeVisible 0.3s ease-in-out forwards;
+  to {
+    padding-top: 1rem;
   }
-  
-  @keyframes expandPadding {
-    from {
-      padding-top: 0;
-    }
-    to {
-      padding-top: 1rem;
-    }
-  }
-  
-  @keyframes makeVisible {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }  
+}
 
-  .card-content-ios p {
-    font-size: 1rem;
+@keyframes makeVisible {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}  
 /*   
-  .faq svg {
-    box-sizing: border-box;
-    background-color: #0d0d0d;
-    border-radius: 50%;
-    height: 1.75rem;
-    width: 1.75rem;
-    padding: 5px;
-    transition: transform ease-in-out 0.15s;
-    display: block;
-    overflow: hidden;
-  }   */
+.faq svg {
+box-sizing: border-box;
+background-color: #0d0d0d;
+border-radius: 50%;
+height: 1.75rem;
+width: 1.75rem;
+padding: 5px;
+transition: transform ease-in-out 0.15s;
+display: block;
+overflow: hidden;
+}   */
 
-  /* Wrapper that enforces a perfect circle */
+/* Wrapper that enforces a perfect circle */
 .plus-icon-wrapper {
   background-color: #0d0d0d;
   border-radius: 50%;
@@ -79,13 +71,14 @@ details > summary {
 
 /* Make the SVG fill the container appropriately */
 .plus-icon-wrapper svg {
+  color: #FFF;
   display: block;
   height: 80%;  /* Adjust based on your desired icon size */
   transition: transform ease-in-out 0.15s;
   width: 80%;
 }
-  
-  details[open] > summary > .plus-icon-wrapper > svg {
-    /* color: #ffa500; */
-    transform: rotate(45deg);
-  }  
+
+details[open] > summary > .plus-icon-wrapper > svg {
+  /* color: #ffa500; */
+  transform: rotate(45deg);
+}  

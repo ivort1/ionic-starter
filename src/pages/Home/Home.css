@@ -17,12 +17,11 @@
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: medium;
 }
 
 .home--card-content-service-hours {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: small;
+    /* font-size: medium; */
 }

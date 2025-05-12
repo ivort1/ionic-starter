@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+h2 {
+    color: #FFF !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+}
+
+p {
+    color: var(--ion-text-color-step-300, #bbbbbb) !important;
+    font-size: 1rem !important;
+}
+
+ion-card {
+    color: var(--ion-text-color-step-300, #bbbbbb) !important;
+}
+
 ion-tab-button svg {
     height: 1rem;
     width: 1rem;

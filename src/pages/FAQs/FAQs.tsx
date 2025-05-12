@@ -37,7 +37,7 @@ export default function FAQs() {
         {
           faqs.map(({ question, answer }, index) => (
             <IonCard key={index}>
-              <IonCardContent>
+              <IonCardContent color="secondary">
                 <Faq name="details-faq" question={question} answer={answer}/>
               </IonCardContent>
             </IonCard>

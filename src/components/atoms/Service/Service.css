@@ -5,16 +5,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-}
-
-h2.service-component--service {
-    color: #FFF;
-    font-weight: 700;
-}
-
-.service-component--details {
-    color: #a9a9a9;
+    gap: 1rem;
 }
 
 .service-component--price {

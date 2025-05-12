@@ -43,7 +43,6 @@ export default function Home() {
         <IonCard className="about">
           <IonCardHeader>
             <IonCardTitle>ET Fadezz</IonCardTitle>
-            <IonCardSubtitle>Professional barber</IonCardSubtitle>
           </IonCardHeader>
 
           <IonCardContent>
