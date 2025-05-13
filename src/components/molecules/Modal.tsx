@@ -9,6 +9,8 @@ import {
   IonTitle,
 } from '@ionic/react';
 
+import "./Modal.css";
+
 export default function Modal() {
   const modal = useRef<any>(null);
   const page = useRef(null);
