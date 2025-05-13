@@ -15,7 +15,7 @@ import './Home.css';
 
 import logo from "../../../assets/logo.svg";
 
-import { ChatOutline, PhoneOutline } from '../../../assets/icons';
+import { ChatOutline, PhoneOutline, InstagramOutline } from '../../../assets/icons';
 
 // JSON data
 import json from "../../database/database.json";
@@ -44,19 +44,22 @@ export default function Home() {
 
         <StarryNight />
         
-        <img src={logo} alt="logo" />
+        <div className="home">
+          <img src={logo} alt="logo" className="home--logo" />
 
-        <div className="home--about">
-          <h2>ET Fadezz</h2>
-          <p>
-            Licensed barber serving Los Angeles and San Bernardino counties,
-            committed to exceptional professionalism, quality, and personalized
-            care for every client.
-          </p>
+          <div className="home--about">
+            <h2>ET Fadezz</h2>
+            <p>
+              Licensed barber serving Los Angeles and San Bernardino counties,
+              committed to exceptional professionalism, quality, and personalized
+              care for every client.
+            </p>
 
-          <div className="home--about-contact">
-            <span className="home--about-contact-svg">{ <ChatOutline /> } Text</span>
-            <span className="home--about-contact-svg">{<PhoneOutline />} Call</span>
+            <div className="home--about-contact">
+              <span className="home--about-contact-svg">{ <ChatOutline /> } Text</span>
+              <span className="home--about-contact-svg">{ <PhoneOutline />} Call</span>
+              <span className="home--about-contact-svg">{ <InstagramOutline />} Connect</span>
+            </div>
           </div>
         </div>
 
