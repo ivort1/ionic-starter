@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
+  IonContent,
   IonLabel,
   IonRouterOutlet,
   IonTabBar,
@@ -114,7 +115,7 @@ export default function App() {
           </IonTabBar>
         </IonTabs>
       </IonReactRouter>
-
+      
       <FloatingActionButton icon={<Calendar />} />
     </IonApp>
   );
