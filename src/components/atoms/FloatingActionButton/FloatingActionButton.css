@@ -1,0 +1,36 @@
+.button-85 {
+  position: fixed;
+  right: 1rem;
+  bottom: 12vh;
+  z-index: 999;
+  
+  background: #FFF;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  font-size: 0.5rem;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  
+  /* Flexbox for inner content */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  /* Smoothly transition opacity */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button-85.hidden {
+  opacity: 0;
+}
+
+.button-85 svg {
+  height: 0.75rem;
+  width: 0.75rem;
+}

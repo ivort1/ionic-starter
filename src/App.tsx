@@ -52,7 +52,7 @@ import "./App.css";
 import { Calendar, CameraFill, FaqFill, HairClipperFill, HairClipperOutline, StarRatingFill, StarRatingOutline, ThumbsUpFill } from '../assets/icons';
 
 import { HomeOutline, HomeFill, CameraOutline, ThumbsUpOutline, FaqOutline } from "../assets/icons";
-import CtaButton from './components/atoms/CtaButton/CtaButton';
+import FloatingActionButton from './components/atoms/FloatingActionButton/FloatingActionButton';
 
 setupIonicReact();
 
@@ -115,7 +115,7 @@ export default function App() {
         </IonTabs>
       </IonReactRouter>
 
-      <CtaButton icon={<Calendar />} />
+      <FloatingActionButton icon={<Calendar />} />
     </IonApp>
   );
 };
