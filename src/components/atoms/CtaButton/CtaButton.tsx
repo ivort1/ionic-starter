@@ -10,7 +10,7 @@ interface CtaButtonProps {
 export default function CtaButton({ icon }: CtaButtonProps) {
   return (
     <button className="button-85" id="open-modal">
-      { icon }
+      { icon } Book an appointment
       <Modal />
     </button>
   );
