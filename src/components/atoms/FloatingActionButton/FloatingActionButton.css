@@ -1,7 +1,11 @@
+:root {
+  --ion-tab-bar-height: 10vh;
+}
+
 .button-85 {
   position: fixed;
   right: 1rem;
-  bottom: 12vh;
+  bottom: calc(var(--ion-tab-bar-height) + 1rem);
   z-index: 999;
   
   background: #FFF;
@@ -33,9 +37,4 @@
 .button-85 svg {
   height: 0.75rem;
   width: 0.75rem;
-}
-
-ion-fab {
-  position: absolute !important;
-  margin-bottom: 25%;
 }

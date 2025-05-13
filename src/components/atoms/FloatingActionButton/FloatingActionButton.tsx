@@ -1,20 +1,16 @@
-import { IonFab, IonFabButton } from '@ionic/react';
 import Modal from '../../molecules/Modal';
-
 
 import "./FloatingActionButton.css";
 
-interface FloatingActionButtonProps {
+interface CtaButtonProps {
   icon: React.ReactNode;
 }
 
-export default function FloatingActionButton({ icon }: FloatingActionButtonProps) {
+export default function CtaButton({ icon }: CtaButtonProps) {
   return (
-    <IonFab horizontal="end" vertical="bottom" slot="fixed">
-        <IonFabButton id="open-modal">
-          { icon }
-        </IonFabButton>
-        <Modal />
-    </IonFab>
+    <button className="button-85" id="open-modal">
+      { icon } Book an appointment
+      <Modal />
+    </button>
   );
 }
