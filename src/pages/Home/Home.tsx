@@ -13,6 +13,10 @@ import {
 
 import './Home.css';
 
+import logo from "../../../assets/logo.svg";
+
+import { ChatOutline, PhoneOutline } from '../../../assets/icons';
+
 // JSON data
 import json from "../../database/database.json";
 import { Database } from "../../database/database";
@@ -40,17 +44,21 @@ export default function Home() {
 
         <StarryNight />
         
-        <IonCard className="about">
-          <IonCardHeader>
-            <IonCardTitle>ET Fadezz</IonCardTitle>
-          </IonCardHeader>
+        <img src={logo} alt="logo" />
 
-          <IonCardContent>
+        <div className="home--about">
+          <h2>ET Fadezz</h2>
+          <p>
             Licensed barber serving Los Angeles and San Bernardino counties,
             committed to exceptional professionalism, quality, and personalized
             care for every client.
-          </IonCardContent>
-      </IonCard>
+          </p>
+
+          <div className="home--about-contact">
+            <span className="home--about-contact-svg">{ <ChatOutline /> } Text</span>
+            <span className="home--about-contact-svg">{<PhoneOutline />} Call</span>
+          </div>
+        </div>
 
       <IonCard>
           <IonCardHeader>

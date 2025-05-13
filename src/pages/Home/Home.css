@@ -2,6 +2,40 @@ ion-card-title {
     font-size: 1.25rem;
 }
 
+.home--about {
+    padding: 0 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 1.25rem !important;
+        margin: 0;
+    }
+}
+
+.home--about-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+    svg {
+        width: 1rem;
+        height: 1rem;
+        transform: scaleX(-1); transform-origin: center;
+    }
+}
+
+.home--about-contact-svg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 .about {
     margin-top: 5rem;
 }
