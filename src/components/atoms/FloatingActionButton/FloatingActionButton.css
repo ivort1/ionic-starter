@@ -1,11 +1,7 @@
-:root {
-  --ion-tab-bar-height: 10vh;
-}
-
 .button-85 {
   position: fixed;
   right: 1rem;
-  bottom: calc(var(--ion-tab-bar-height) + 1rem);
+  bottom: 13vh;
   z-index: 999;
   
   background: #FFF;
