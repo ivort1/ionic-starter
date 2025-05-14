@@ -2,6 +2,10 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import './Photos.css';
 
 export default function Photos() {
+  const gallery = Object.values(
+    import.meta.glob('@photos/*.{webp,WEBP}', { eager: true, query: '?url', import: 'default' })
+  ) as string[];
+
   return (
     <IonPage>
       <IonHeader>
@@ -15,7 +19,13 @@ export default function Photos() {
             <IonTitle size="large">Photos</IonTitle>
           </IonToolbar>
         </IonHeader>
+
+        <div className="photos">
+          {gallery.map((photo, index) => (
+            <img key={index} src={photo} alt={`Photo ${index + 1}`} />
+          ))}
+        </div>
       </IonContent>
     </IonPage>
   );
-};
+}

@@ -4,9 +4,10 @@ interface ServiceProps {
   service: string;
   details: string;
   price: string;
+  index: string;
 }
 
-export default function Service({ service, details, price }: ServiceProps) {
+export default function Service({ service, details, price, index }: ServiceProps) {
   return (
     <div className="service-component">
         <div>
