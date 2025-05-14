@@ -84,7 +84,7 @@
     ],
     "faqs": [
         {
-            "question": "Do you accept walk-ins?",
+            "question": "Do I need an appointment, or are walk-ins welcome? ",
             "answer": "Yes, we accept walk-ins but appointments are preferred."
         },
         {
@@ -92,12 +92,24 @@
             "answer": "Yes, we can accommodate children of all ages."
         },
         {
-            "question": "Where are you located?",
+            "question": "Where is your barbershop located, and what areas do you serve? ",
             "answer": "Our studio is located in Fontana, CA near the 10 freeway off of the Sierra Ave exit. Since we operate by appointment-only, the exact address will be sent via text and email once you've confirmed your appointment."
         },
         {
-            "question": "Why are you gae?",
+            "question": "Are you licensed? ",
             "answer": "Who says I'm gae?"
+        },
+        {
+            "question": "What payment methods do you accept?",
+            "answer": ""
+        },
+        {
+            "question": "How do I reschedule or cancel my appointment?",
+            "answer": ""
+        },
+        {
+            "question": "How can I contact your shop for more information or to ask a question?",
+            "answer": ""
         }
     ]
 }
