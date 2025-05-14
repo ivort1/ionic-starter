@@ -13,8 +13,8 @@ export default function Hours({ day, open, close, closed }: HoursProps) {
       <span className="day">{day}</span>
       <span className="dot-leader" />
       <span className="times">
-        {closed ? "Closed" : `${open} - ${close}`}
+        {closed ? "Closed" : [open, close].filter(Boolean).join(" - ")}
       </span>
     </div>
   );
-}2
+}

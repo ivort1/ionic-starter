@@ -7,3 +7,8 @@ ion-list > ion-item:not(:first-child) > ion-label {
 ion-list > ion-item:not(:last-child) > ion-label {
     margin-bottom: 24px;
 }
+
+.services--complimentary {
+    margin-left: 16px;
+    margin-bottom: 32px;
+}

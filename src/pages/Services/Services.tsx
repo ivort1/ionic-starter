@@ -28,6 +28,9 @@ export default function Services() {
           </IonToolbar>
         </IonHeader>
 
+        <p className="services--complimentary">
+          Every service includes a complimentary drink and your choice of a tonic massage or hand massager.
+        </p>
 
         <IonList inset={true}>
           {

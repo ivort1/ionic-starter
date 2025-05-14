@@ -26,7 +26,7 @@ import StarryNight from '../../components/atoms/StarryNight/StarryNight';
 
 export default function Home() {
   const data: Database = json;
-  const { business_hours } = data;
+  const { information, business_hours, social_media } = data;
 
   return (
     <IonPage className="no-scrollbar">
@@ -48,7 +48,7 @@ export default function Home() {
           <img src={logo} alt="logo" className="home--logo" />
 
           <div className="home--about">
-            <h2>ET Fadezz</h2>
+            <h2>{information.name}</h2>
             <p>
               Licensed barber serving Los Angeles and San Bernardino counties,
               committed to exceptional professionalism, quality, and personalized
@@ -56,9 +56,17 @@ export default function Home() {
             </p>
 
             <div className="home--about-contact">
-              <span className="home--about-contact-svg">{ <ChatOutline /> } Text</span>
-              <span className="home--about-contact-svg">{ <PhoneOutline />} Call</span>
-              <span className="home--about-contact-svg">{ <InstagramOutline />} Connect</span>
+              <a className="home--about-contact-svg" href={`sms:${information.phone}`}>
+                { <ChatOutline /> } Text
+              </a>
+
+              <a className="home--about-contact-svg" href={`tel:${information.phone}`}>
+                { <PhoneOutline />} Call
+              </a>
+              
+              <a className="home--about-contact-svg" href={social_media.instagram_url} target="_blank" rel="noopener noreferrer">
+                { <InstagramOutline />} Connect
+              </a>
             </div>
           </div>
         </div>
@@ -74,6 +82,7 @@ export default function Home() {
                 <Hours day={day} open={open} close={close} closed={closed} key={index}/>
               ))
             }
+            <div className="home--card-content-subject-to-change">* Hours may vary; check online for available appointment times.</div>
           </IonCardContent>
       </IonCard>
       </IonContent>
