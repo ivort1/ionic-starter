@@ -23,7 +23,7 @@ ion-card-title {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
 
     h2 {
         font-size: 1.25rem !important;
