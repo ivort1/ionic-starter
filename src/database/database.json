@@ -7,7 +7,25 @@
     },
     "business_hours": [
         {
-            "day": "Monday - Thursday",
+            "day": "Monday",
+            "open": "10am",
+            "close": "7pm",
+            "closed": false
+        },
+        {
+            "day": "Tuesday",
+            "open": "10am",
+            "close": "7pm",
+            "closed": false
+        },
+        {
+            "day": "Wednesday",
+            "open": "10am",
+            "close": "7pm",
+            "closed": false
+        },
+        {
+            "day": "Thursday",
             "open": "10am",
             "close": "7pm",
             "closed": false
@@ -21,14 +39,14 @@
         {
             
             "day": "Saturday",
-            "open": "Check availability online",
+            "open": "Check apts online",
             "close": "",
             "closed": false
         },
         {
             
             "day": "Sunday",
-            "open": "Check availability online",
+            "open": "Check apts online",
             "close": "",
             "closed": false
         }
