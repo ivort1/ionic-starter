@@ -39,14 +39,14 @@
         {
             
             "day": "Saturday",
-            "open": "Check apts online",
+            "open": "Check online",
             "close": "",
             "closed": false
         },
         {
             
             "day": "Sunday",
-            "open": "Check apts online",
+            "open": "Check online",
             "close": "",
             "closed": false
         }

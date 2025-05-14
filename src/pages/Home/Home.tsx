@@ -50,9 +50,9 @@ export default function Home() {
           <div className="home--about">
             <h2>{information.name}</h2>
             <p>
-              Licensed barber serving Los Angeles and San Bernardino counties,
-              committed to exceptional professionalism, quality, and personalized
-              care for every client.
+              We are a licensed barbershop serving Los Angeles and San Bernardino counties,
+              committed to exceptional professionalism, quality, and personalized care for every client.
+              We offer premium haircuts, fades, and other styles in a laid-back setting, ensuring you step out with a fresh cut.
             </p>
 
             <div className="home--about-contact">
@@ -82,7 +82,7 @@ export default function Home() {
                 <Hours day={day} open={open} close={close} closed={closed} key={index}/>
               ))
             }
-            <div className="home--card-content-subject-to-change">* Hours may vary; check online for available appointment times.</div>
+            <div className="home--card-content-subject-to-change">* Hours may vary; check online for available appointment times. Weekend slots are fluid—no fixed hours, so please refer to our online schedule.</div>
           </IonCardContent>
       </IonCard>
       </IonContent>
