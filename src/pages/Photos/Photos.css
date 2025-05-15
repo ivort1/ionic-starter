@@ -1,7 +1,7 @@
 .photos {
   padding: 16px;
   display: grid;
-  gap: 0.5rem;
+  gap: 0.25rem;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
