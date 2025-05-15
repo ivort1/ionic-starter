@@ -1,0 +1,20 @@
+.reviews--leave-us-a-review {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+}
+
+.reviews--coming-soon {
+    padding: 3rem;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        height: auto;
+        max-width: 10rem;
+        width: 100%;
+    }
+}

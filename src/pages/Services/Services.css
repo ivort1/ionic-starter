@@ -10,5 +10,6 @@ ion-list > ion-item:not(:last-child) > ion-label {
 
 .services--complimentary {
     margin-left: 16px;
+    margin-right: 16px;
     margin-bottom: 32px;
 }

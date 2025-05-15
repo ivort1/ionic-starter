@@ -35,9 +35,9 @@ export default function Services() {
         <IonList inset={true}>
           {
             services.map(({ service, details, price }, index) => (
-              <IonItem>
+              <IonItem key={index}>
                 <IonLabel>
-                  <Service key={index} service={service} details={details} price={price} />
+                  <Service service={service} details={details} price={price} />
                 </IonLabel>
               </IonItem>
             ))
