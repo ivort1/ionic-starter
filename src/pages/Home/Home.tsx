@@ -50,9 +50,9 @@ export default function Home() {
           <div className="home--about">
             <h2>{information.name}</h2>
             <p>
-              We are a licensed barbershop serving Los Angeles and San Bernardino counties,
+              Barbershop based in Fontana, CA serving Los Angeles, Orange, and San Bernardino counties. We are
               committed to exceptional professionalism, quality, and personalized care for every client.
-              We offer premium haircuts, fades, and other styles in a laid-back setting, ensuring you step out with a fresh cut.
+              We offer premium haircuts, fades, and other styles in a laid-back setting, ensuring you step out looking your absolute best.
             </p>
 
             <div className="home--about-contact">
