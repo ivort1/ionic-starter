@@ -3,10 +3,5 @@
   display: grid;
   gap: 0.25rem;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-}
-
-.photos img {
-  width: 100%;
-  border-radius: 5px;
-  display: block;
+    
 }

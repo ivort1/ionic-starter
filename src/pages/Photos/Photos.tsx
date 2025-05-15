@@ -1,4 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import LazyImg from '../../components/atoms/lazy-img/LazyImg';
 import './Photos.css';
 
 export default function Photos() {
@@ -22,7 +23,7 @@ export default function Photos() {
 
         <div className="photos">
           {gallery.map((photo, index) => (
-            <img key={index} src={photo} alt={`Photo ${index + 1}`} />
+            <LazyImg key={index} src={photo} alt={`Photo ${index + 1}`} />
           ))}
         </div>
       </IonContent>
