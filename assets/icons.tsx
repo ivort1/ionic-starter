@@ -152,8 +152,7 @@ export const PlusSign = () => (
 )
 
 export const PlusSignWithBlackBg = () => (
-  <svg fill="#ffffff" viewBox="-89.6 -89.6 435.20 435.20" id="Flat" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#ffffff" strokeWidth="6.4"><g id="SVGRepo_bgCarrier" strokeWidth="0" transform="translate(6.400000000000006,6.400000000000006), scale(0.95)"><rect x="-89.6" y="-89.6" width="435.20" height="435.20" rx="217.6" fill="#000000" strokeWidth="0"></rect></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="0.512"></g><g id="SVGRepo_iconCarrier"> <path d="M224,128a7.99977,7.99977,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A7.99977,7.99977,0,0,1,224,128Z"></path> </g></svg>
-);
+  <svg fill="#ffffff" viewBox="-140.8 -140.8 537.60 537.60" id="Flat" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#ffffff" strokeWidth="8.959999999999999"><g id="SVGRepo_bgCarrier" strokeWidth="0" transform="translate(6.400000000000006,6.400000000000006), scale(0.95)"><rect x="-140.8" y="-140.8" width="537.60" height="537.60" rx="268.8" fill="#000000" strokeWidth="0"></rect></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="0.512"></g><g id="SVGRepo_iconCarrier"> <path d="M224,128a7.99977,7.99977,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A7.99977,7.99977,0,0,1,224,128Z"></path> </g></svg>);
 
 export const ThumbsUpFill = () => (
 <svg xmlns="http://www.w3.org/2000/svg" className="selected" id="Filled" viewBox="0 0 24 24" fill="currentColor">
