@@ -1,3 +1,33 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.reviews--google-business-btn {
+    border: solid 1px #FFF;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0 16px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    svg {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
 .reviews--leave-us-a-review {
     margin-left: 16px;
     margin-right: 16px;
@@ -5,7 +35,7 @@
 }
 
 .reviews--coming-soon {
-    padding: 3rem;
+    padding: 2rem;
 
     /* Flexbox */
     display: flex;
@@ -13,8 +43,7 @@
     align-items: center;
 
     svg {
-        height: auto;
-        max-width: 10rem;
-        width: 100%;
+        height: 5rem;
+        width: 5rem;
     }
 }

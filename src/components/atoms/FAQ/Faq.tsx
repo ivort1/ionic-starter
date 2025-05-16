@@ -1,4 +1,4 @@
-import { PlusSign } from "../../../../assets/icons";
+import { PlusSignWithBlackBg } from "../../../../assets/icons";
 import "./Faq.css";
 
 interface FaqProps {
@@ -13,7 +13,7 @@ export default function Faq({ name, question, answer }: FaqProps) {
       <summary>
         <h2>{question}</h2>
         <span className="summary--svg">
-          <PlusSign />
+          <PlusSignWithBlackBg />
         </span> 
       </summary>
       <p>{answer}</p>
