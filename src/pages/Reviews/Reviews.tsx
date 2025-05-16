@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent } from '@ionic/react';
 import './Reviews.css';
-import { ComingSoon, StarOutline } from '../../../assets/icons';
+import { ComingSoon, FeedbackOutline, StarOutline, StarRatingOutline } from '../../../assets/icons';
 
 export default function Reviews() {
   return (
@@ -27,7 +27,7 @@ export default function Reviews() {
             </p>
 
             <a target="_blank" rel="noopener noreferrer" className="reviews--google-business-btn">
-              <StarOutline />
+              <FeedbackOutline />
               Leave a review
             </a>
           </div>
