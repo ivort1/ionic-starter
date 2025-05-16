@@ -152,12 +152,7 @@ export const PlusSign = () => (
 )
 
 export const PlusSignWithBlackBg = () => (
-  <svg fill="#ffffff" viewBox="-64 -64 384.00 384.00" id="Flat" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#ffffff" strokeWidth="0.00256">
-    <g id="SVGRepo_bgCarrier" strokeWidth="0" transform="translate(0,0), scale(1)"><rect x="-64" y="-64" width="384.00" height="384.00" rx="192" fill="#000000"></rect></g>
-    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="0.512"></g><g id="SVGRepo_iconCarrier">
-      <path d="M224,128a7.99977,7.99977,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A7.99977,7.99977,0,0,1,224,128Z"></path>
-    </g>
-  </svg>
+  <svg fill="#ffffff" viewBox="-89.6 -89.6 435.20 435.20" id="Flat" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#ffffff" strokeWidth="6.4"><g id="SVGRepo_bgCarrier" strokeWidth="0" transform="translate(6.400000000000006,6.400000000000006), scale(0.95)"><rect x="-89.6" y="-89.6" width="435.20" height="435.20" rx="217.6" fill="#000000" strokeWidth="0"></rect></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="0.512"></g><g id="SVGRepo_iconCarrier"> <path d="M224,128a7.99977,7.99977,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A7.99977,7.99977,0,0,1,224,128Z"></path> </g></svg>
 );
 
 export const ThumbsUpFill = () => (
