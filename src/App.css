@@ -53,3 +53,8 @@ ion-label {
 ion-title {
     background-color: #000000;
 }
+
+/* "Close" button in modal */
+.button-clear {
+  --color: #FFF;
+}
