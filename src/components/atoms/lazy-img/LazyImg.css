@@ -1,18 +1,16 @@
-/* The outer wrapper uses 100% width so that your column layout isn’t affected */
 .lazy-img-wrapper {
   position: relative;
   width: 100%;
 }
 
-/* When the skeleton is visible, we apply a fixed aspect ratio (portrait) 
-   using the padding-bottom trick. This container doesn’t supply its own background. */
+/* The placeholder container forces a 3:4 portrait ratio 
+   without applying any unwanted background color */
 .skeleton-portrait {
   width: 100%;
-  padding-bottom: 133.33%;  /* This gives roughly a 3:4 portrait ratio */
+  padding-bottom: 133.33%;  /* Approximately 3:4 portrait */
   position: relative;
 }
 
-/* Force the Ionic skeleton to fill its container */
 .skeleton-portrait ion-skeleton-text {
   position: absolute;
   top: 0;
