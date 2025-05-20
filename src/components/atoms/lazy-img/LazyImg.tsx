@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IonImg, IonSkeletonText } from '@ionic/react';
+import './LazyImg.css';
 
 interface LazyImageProps {
   src: string;
@@ -12,26 +13,29 @@ const LazyImg: React.FC<LazyImageProps> = ({ src, alt, className }) => {
 
   return (
     <div
-      className={className}
-      style={{ position: 'relative', width: '100%', height: '100%' }}
+      className={className ? `${className} lazy-img-wrapper` : 'lazy-img-wrapper'}
+      style={{ position: 'relative', width: '100%' }}
     >
-      {/* The IonImg fades in once loaded */}
+      {/* Placeholder: a uniform portrait rectangle */}
+      {!loaded && (
+        <div className="skeleton-placeholder">
+          <IonSkeletonText animated={true} style={{ width: '100%', height: '100%' }} />
+        </div>
+      )}
+      
+      {/* The actual image renders in its natural aspect ratio */}
       <IonImg
         src={src}
         alt={alt}
         onIonImgDidLoad={() => setLoaded(true)}
         style={{
+          display: 'block',
           width: '100%',
+          height: 'auto', // preserve natural height
           objectFit: 'contain',
-          objectPosition: 'top'
+          objectPosition: 'center'
         }}
       />
-
-      {/* Skeleton overlay while image loads */}
-      {!loaded && (
-        <IonSkeletonText animated={true}
-        />
-      )}
     </div>
   );
 };
