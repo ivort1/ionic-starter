@@ -35,7 +35,7 @@ export default function Modal() {
       </IonHeader>
       <IonContent className="ion-padding" style={{ padding: 0 }}>
         <iframe
-          src="https://gcfadezz.youcanbook.me/"
+          src="https://etfadezz.youcanbook.me"
           title="Appointment Booking"
           style={{
             width: '100%',
