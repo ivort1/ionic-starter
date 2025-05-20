@@ -12,26 +12,23 @@ const LazyImg: React.FC<LazyImageProps> = ({ src, alt, className }) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div
-      className={className ? `${className} lazy-img-wrapper` : 'lazy-img-wrapper'}
-      style={{ position: 'relative', width: '100%' }}
-    >
-      {/* Placeholder: a uniform portrait rectangle */}
+    <div className={className ? `${className} lazy-img-wrapper` : 'lazy-img-wrapper'}>
+      {/* Display the Ionic skeleton placeholder if the image hasn't loaded */}
       {!loaded && (
-        <div className="skeleton-placeholder">
-          <IonSkeletonText animated={true} style={{ width: '100%', height: '100%' }} />
+        <div className="skeleton-portrait">
+          <IonSkeletonText animated={true} />
         </div>
       )}
-      
-      {/* The actual image renders in its natural aspect ratio */}
+
+      {/* The actual image is rendered with its natural dimensions */}
       <IonImg
         src={src}
         alt={alt}
         onIonImgDidLoad={() => setLoaded(true)}
         style={{
-          display: 'block',
+          display: loaded ? 'block' : 'none',
           width: '100%',
-          height: 'auto', // preserve natural height
+          height: 'auto',
           objectFit: 'contain',
           objectPosition: 'center'
         }}
