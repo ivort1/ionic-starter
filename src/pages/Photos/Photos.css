@@ -1,7 +1,13 @@
 .photos {
   padding: 16px;
-  display: grid;
-  gap: 0.25rem;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    
+  /* Set the number of columns you want */
+  column-count: 2;
+  column-gap: 0.25rem;
+}
+
+/* Make sure each image fills its container and avoids breaking across columns */
+.photos > * {
+  display: inline-block;
+  width: 100%;
+  /* margin-bottom: 0.25rem; */
 }
