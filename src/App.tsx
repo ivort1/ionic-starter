@@ -50,9 +50,9 @@ import './theme/variables.css';
 
 import "./App.css";
 
-import { Calendar, CameraFill, FaqFill, HairClipperFill, HairClipperOutline, StarRatingFill, StarRatingOutline, ThumbsUpFill } from '../assets/icons';
+import { Calendar, CameraFill, FaqFill, HairClipperFill, HairClipperOutline, StarRatingFill, StarRatingOutline } from '../assets/icons';
 
-import { HomeOutline, HomeFill, CameraOutline, ThumbsUpOutline, FaqOutline } from "../assets/icons";
+import { HomeOutline, HomeFill, CameraOutline, FaqOutline } from "../assets/icons";
 import FloatingActionButton from './components/atoms/FloatingActionButton/FloatingActionButton';
 
 setupIonicReact();
@@ -116,7 +116,7 @@ export default function App() {
         </IonTabs>
       </IonReactRouter>
       
-      <a href="https://etfadezz.youcanbook.me" target="_blank" rel="noopener noreferrer" style={{color:"white", fontSize:"2rem", position:"absolute", bottom:"0", right:"1rem"}}>Book an appointment</a>
+      <FloatingActionButton href="https://etfadezz.youcanbook.me" icon={<Calendar />} text="Book an appointment" />
     </IonApp>
   );
 };

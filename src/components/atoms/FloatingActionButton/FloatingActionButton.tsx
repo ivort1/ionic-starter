@@ -1,16 +1,15 @@
-import Modal from '../../molecules/Modal';
-
 import "./FloatingActionButton.css";
 
-interface CtaButtonProps {
-  icon: React.ReactNode;
+interface FloatingActionButtonProps {
+  href: string;
+  icon?: React.ReactNode;
+  text?: string;
 }
 
-export default function CtaButton({ icon }: CtaButtonProps) {
+export default function FloatingActionButton({ href, icon, text }: FloatingActionButtonProps) {
   return (
-    <button className="button-85" id="open-modal">
-      { icon } Book an appointment
-      <Modal />
-    </button>
+    <a href={href} className="floating-action-button" target="_blank" rel ="noopener noreferrer">
+      { icon } { text }
+    </a>
   );
 }
