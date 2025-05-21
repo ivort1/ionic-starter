@@ -36,6 +36,9 @@ function moveFolder(folderName) {
 // Move the mobile app's entry file
 moveFile('index.html');
 
+// Move the manifest file to dist/app so that it's located at /app/manifest.json
+moveFile('manifest.json');
+
 // Move any favicon files (images with names starting with 'favicon')
 fs.readdirSync(distDir).forEach(file => {
   if (/^favicon/.test(file)) {
