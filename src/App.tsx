@@ -59,7 +59,7 @@ setupIonicReact();
 
 export default function App() {
   return (
-    <IonApp>
+    <IonApp className="app">
       <IonReactRouter>
         <IonTabs>
           <IonRouterOutlet>
