@@ -1,0 +1,15 @@
+[build]
+  # This command runs your build and then runs the postbuild script.
+  # Adjust the chain as needed. (On Windows, you might need to use a different chain separator.)
+  command = "npm run build && npm run postbuild"
+  publish = "dist"
+
+[[redirects]]
+  from = "/app/*"
+  to = "/app/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/landing.html"
+  status = 200

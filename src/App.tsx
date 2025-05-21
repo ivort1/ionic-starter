@@ -60,7 +60,7 @@ setupIonicReact();
 export default function App() {
   return (
     <IonApp className="app">
-      <IonReactRouter>
+      <IonReactRouter basename="/app">
         <IonTabs>
           <IonRouterOutlet>
             <Route exact path="/home">
