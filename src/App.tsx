@@ -116,7 +116,7 @@ export default function App() {
         </IonTabs>
       </IonReactRouter>
       
-      <FloatingActionButton icon={<Calendar />} />
+      <a href="https://etfadezz.youcanbook.me" target="_blank" rel="noopener noreferrer" style={{color:"white", fontSize:"2rem", position:"absolute", bottom:"0", right:"1rem"}}>Book an appointment</a>
     </IonApp>
   );
 };
