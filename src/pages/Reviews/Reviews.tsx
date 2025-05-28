@@ -26,7 +26,7 @@ export default function Reviews() {
               customers to choose the best barbershop experience available in Fontana.
             </p>
 
-            <a target="_blank" rel="noopener noreferrer" className="reviews--google-business-btn">
+            <a href="https://g.co/kgs/hL37rBV" target="_blank" rel="noopener noreferrer" className="reviews--google-business-btn">
               <FeedbackOutline />
               Leave a review
             </a>
